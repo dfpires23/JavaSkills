@@ -1,0 +1,5 @@
+Paulo Carvalho,1112223,1DA
+Afonso Pereira,1227000,1DD
+Rita Moreira,1233344,1DB
+Ana Coelho,1235777,1DB
+Pedro Carvalho,1238666,1DA

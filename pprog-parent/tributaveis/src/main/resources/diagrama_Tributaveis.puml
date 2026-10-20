@@ -1,0 +1,20 @@
+@startuml
+interface Cores {
+    + AZUL: String
+    + CINZENTO: String
+    + ENCARNADO: String
+    + VERDE: String
+}
+
+class Veiculo implements Cores {
+    - matricula: String
+    - cilindrada: int
+    - cor: String
+}
+
+class Moradia implements Cores {
+    - morada: String
+    - area: float
+    - cor: String
+}
+@enduml

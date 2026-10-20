@@ -1,0 +1,39 @@
+@startuml
+abstract class Contribuinte {
+    - nome: String
+    - morada: String
+    + {abstract} calcularImposto(): float
+}
+
+class Reformado extends Contribuinte {
+    - {static} TAXA_RT: float
+    - {static} TAXA_OR: float
+    - {abstract} calcularImposto(): float
+    - valor: float
+}
+
+class ContaOutrem extends Contribuinte {
+    - {static} TAXA_RT: float
+    - {static} TAXA_OR: float
+    - {static} LIMITE: float
+    - {abstract} calcularImposto(): float
+    - nomeEmpresa: String
+    - valor: float
+}
+
+class ContaPropria extends Contribuinte {
+    - {static} TAXA_RT: float
+    - {static} TAXA_OR: float
+    - {static} LIMITE: float
+    - {abstract} calcularImposto(): float
+    - profissao: String
+    - valor: float
+}
+
+class Desempregado extends Contribuinte {
+    - {static} TAXA_OR: float
+    - {abstract} calcularImposto(): float
+    - mesesParagem: int
+    - valor: float
+}
+@enduml

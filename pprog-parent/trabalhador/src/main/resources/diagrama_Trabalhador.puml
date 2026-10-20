@@ -1,0 +1,28 @@
+@startuml
+abstract class Trabalhador {
+    - nome: String
+    + getNome(): String
+    + calcularVencimento(): float
+}
+
+class TrabalhadorPeca extends Trabalhador {
+    - numeroPecasTipo1: int
+    - numeroPecasTipo2: int
+    - pagamentoPecaTipo1: float
+    - pagamentoPecaTipo2: float
+    + {abstract} calcularVencimento(): float
+}
+
+class TrabalhadorComissao extends Trabalhador {
+    - salarioBase: float
+    - vendas: float
+    - comissao: float
+    + {abstract} calcularVencimento(): float
+}
+
+class TrabalhadorHora extends Trabalhador {
+    - numeroHoras: int
+    - pagamentoHora: float
+    + {abstract} calcularVencimento(): float
+}
+@enduml

@@ -1,0 +1,8 @@
+3 5
+AA-00-00;0;0;Carro
+BB-11-11;0;1;Mota
+CC-22-22;0;0;Carro
+VIP-99-99;2;2;VIP
+DD-33-33;1;4;Carro
+EE-44-44;5;5;Mota
+FF-55-55;0;1;Carro
